@@ -18,9 +18,9 @@
 			<li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-mountain-sun"></i> Show Notes</a>
 			</li>
 		</ul>
-			<a class="btn btn-light my-2 my-sm-0 mr-2" type="submit">
+			<a href="login.jsp" class="btn btn-light my-2 my-sm-0 mr-2" type="submit">
 			<i class="fa-duotone fa-solid fa-right-to-bracket"></i> Login</a> 
-			<a class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa-duotone fa-solid fa-id-card"></i> Register</a>
+			<a href="register.jsp" class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa-duotone fa-solid fa-id-card"></i> Register</a>
 		
 	</div>
 </nav>

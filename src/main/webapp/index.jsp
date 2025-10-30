@@ -26,8 +26,8 @@ background-size: cover;
 			<h1 class="text-white">
 				<i class="fa-solid fa-book-open-reader"></i> ENotes-Save Your Notes
 			</h1>
-			<a href="login.jsp" class="btn btn-light"><i class="fa-solid fa-user-tie"></i> Login</a> <a
-				href="register.jsp" class="btn btn-light"><i class="fa-solid fa-user-plus"></i> Register</a>
+			<a href="login.jsp" class="btn btn-light"><i class="fa-solid fa-user-tie"></i> Login</a> 
+			<a href="register.jsp" class="btn btn-light"><i class="fa-solid fa-user-plus"></i> Register</a>
 		</div>
 	</div>
 <%@include file="all_component/footer.jsp" %>

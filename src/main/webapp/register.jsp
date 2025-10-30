@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Register page</title>
+<%@include file="all_component/allcss.jsp" %>
 </head>
 <body>
+<%@include file="all_component/navbar.jsp" %>
 
 </body>
 </html>
