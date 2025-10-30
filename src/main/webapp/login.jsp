@@ -8,6 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="css/style.css" %>
+<%@include file="all_component/allcss.jsp" %>
 
 
 </body>
