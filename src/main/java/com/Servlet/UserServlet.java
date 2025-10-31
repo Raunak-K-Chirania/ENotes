@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.DAO.UserDAO;
 import com.Db.DBConnect;
@@ -30,14 +31,19 @@ public class UserServlet extends HttpServlet {
 		
 		UserDAO dao=new UserDAO(DBConnect.getConn());
 		boolean f=dao.addUser(us);
-		PrintWriter out=response.getWriter();
+		HttpSession session;
 		
 		if(f)
 		{
-			out.print("User Register uccessfully");
+			session=request.getSession();
+			session.setAttribute("reg-success", "Registration Successfully.");
+			response.sendRedirect("register.jsp");
+			
 		}
 		else {
-			out.print("Data not insert");
+			session=request.getSession();
+			session.setAttribute("failed-msg", "Something went wrong on server");
+			response.sendRedirect("register.jsp ");
 		}
 		
 	}

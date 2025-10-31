@@ -17,8 +17,31 @@
 						<i class="fa-solid fa-user-plus"></i>
 						<h4>Registration</h4>
 					</div>
-					<div class="alert alert-success" role="alert">This is a
-						success alert—check it out!</div>
+					
+						<%
+						String regMsg=(String)session.getAttribute("reg-success");
+						
+						if(regMsg!=null)
+						{%>
+							<div class="alert alert-success" role="alert"><%=regMsg%> Login<a href="login.jsp">Click Here</a></div>
+						
+						<%
+						session.removeAttribute("reg-success");
+						}
+						%>
+						
+						<%
+						String FailedMsg=(String)session.getAttribute("failed-msg");
+						
+						if(FailedMsg != null)
+						{%>
+							
+							<div class="alert alert-danger" role="alert"><%= FailedMsg%></div>
+						
+						<%
+						session.removeAttribute("failed-msg");
+						}
+						%>
 
 					<div class="card-body">
 						<form action="UserServlet" method="post">
