@@ -1,3 +1,5 @@
+<%@page import="java.sql.Connection"%>
+<%@page import="com.Db.DBConnect"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,7 +21,6 @@ background-size: cover;
 </head>
 <body>
 <%@include file ="all_component/navbar.jsp" %>
-
 
 <div class="container-fluid back-img">
 		<div class="text-center">

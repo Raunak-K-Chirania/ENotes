@@ -21,7 +21,7 @@
 						<div class="card-body">
 							<form>
 							<div class="form-group">
-							<label>Enter Full Name</label>
+							<label>Enter Email</label>
 									 <input
 										type="text" class="form-control" id="exampleInputEmail1"
 										aria-describedby="emailHelp">
